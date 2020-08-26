@@ -4,8 +4,8 @@
   "description": "Description",
   "main": "src/js/main.js",
   "scripts": {
-    "build": "parcel build src/js/main.js -d src/build/ -o main.js",
-    "watch": "parcel watch src/js/main.js -d src/build/ -o main.js"
+    "build": "parcel build src/js/main.js -d src/build/ -o main.js && parcel build src/js/popup/index.js -d src/build/ -o popup.js",
+    "watch": "parcel watch src/js/main.js -d src/build/ -o main.js && parcel watch src/js/popup/index.js -d src/build/ -o popup.js"
   },
   "author": "Atakan Goktepe",
   "dependencies": {
@@ -14,5 +14,8 @@
     "parcel-bundler": "^1.6.2",
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3"
   }
 }
